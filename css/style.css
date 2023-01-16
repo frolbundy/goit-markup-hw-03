@@ -235,16 +235,13 @@ button {
 
 .about-list {
   display: flex;
-  flex-wrap: wrap;
+  gap: 24px;
 }
 
 .about-item {
   width: calc((100% - 72px) / 4);
 }
 
-.about-item:not(:last-child) {
-  margin-right: 24px;
-}
 
 /*---------------секція-3---------------*/
 
