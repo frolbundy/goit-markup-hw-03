@@ -48,7 +48,7 @@ button {
 }
 
 .conteiner {
-  width: 1128px;
+  width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
 
@@ -57,7 +57,6 @@ button {
 
   /*outline: 2px solid tomato;*/
 }
-
 
 /*---------------хедер---------------*/
 
@@ -79,7 +78,7 @@ button {
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #E7E9FC;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .logotype {
@@ -236,13 +235,16 @@ button {
 
 .about-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
-
-.about-item:not(:last-child){
-margin-right: 24px;  
+.about-item {
+  width: calc((100% - 72px) / 4);
 }
 
+.about-item:not(:last-child) {
+  margin-right: 24px;
+}
 
 /*---------------секція-3---------------*/
 
@@ -265,7 +267,10 @@ margin-right: 24px;
 .doing-list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
+  flex-wrap: wrap;
+  gap: 24px;
+  /*flex-basis: calc((100-20px)/3);*/
 }
 /*---------------секція-4---------------*/
 .team {
@@ -316,7 +321,10 @@ margin-right: 24px;
 .team-list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
+
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 /*---------------футер---------------*/
@@ -355,7 +363,7 @@ margin-right: 24px;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
+  /*display: flex;*/
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -364,9 +372,7 @@ margin-right: 24px;
 
 /*===========partfolio.html===========*/
 
-/*-------------секція кнопок-------------*/
-
-.hero{
+.container-btn{
   padding-top: 96px;
   padding-bottom: 72px;
 }
@@ -387,13 +393,7 @@ margin-right: 24px;
 
   padding: 12px 24px;
 
-  border: 0;
-}
-
-.hero-list{
-  display: flex;
-  justify-content: center;
-  
+  border: 1px solid #e7e9fc;
 }
 
 .hero-btn:hover,
@@ -402,11 +402,12 @@ margin-right: 24px;
   color: var(--accent-color-btn);
 }
 
-/*-------------секція зображень-------------*/
-
-.image{
-  padding-top: 72px;
-  padding-bottom: 120px;
+.hero-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
 }
 
 .image-title {
@@ -426,20 +427,29 @@ margin-right: 24px;
   color: #434455;
 }
 
-.image-list{
+.image-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.image-item{
+.image-item {
   margin: 24px 12px 24px 12px;
- width: calc((100% - 72px) / 3);
+  width: calc((100% - 72px) / 3);
 }
 
-.conteiner-image-content{
- padding-left: 16px;
- padding-top: 32px;
- padding-bottom: 32px;
- border: 1px solid #E7E9FC;
+.conteiner-image-content {
+  padding-left: 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-right: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
 }
+
+.container-img{
+  padding-bottom: 120px;
+}
+
+
+
