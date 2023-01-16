@@ -274,7 +274,7 @@ button {
   background: #f4f4fd;
 
   padding-top: 120px;
-  padding-bottom: 152px;
+  padding-bottom: 120px;
 }
 
 .team-title {
@@ -369,11 +369,14 @@ button {
 
 /*===========partfolio.html===========*/
 
-.container-btn{
+.hero{
   padding-top: 96px;
-  padding-bottom: 72px;
+  padding-bottom: 120px;
 }
 
+.container-btn{
+  margin-bottom: 72px;
+}
 
 .hero-btn {
   font-family: "Roboto", sans-serif;
